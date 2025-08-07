@@ -1,0 +1,180 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #252525;
+    --secondary-color: #f9f5ed;
+    --text-primary: #252525;
+    --text-secondary: #f9f5ed;
+}
+
+body {
+    background-color: var(--secondary-color);
+    height: 100%;
+}
+
+header {
+    background-color: var(--primary-color);
+    height: 10vh;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: flex-end;
+    padding: 20px 50px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 20px;
+    transition: font-size 0.1s ease-in-out;
+    text-underline-offset: 10px;
+}
+
+a:hover {
+    font-size: 21px;
+    text-decoration: underline solid white;
+}
+
+.contact-text {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+}
+
+.prime-text {
+    width: 60%
+}
+
+.only-contact {
+    font-size: 100px;
+    color: var(--text-primary);
+    font-weight: 800;
+    margin: 70px;
+}
+
+.paragraf-only {
+    font-size: 20px;
+    margin-left: 70px;
+    width: 50%;
+}
+
+.second-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.text-contact {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-left: 45px;
+}
+
+.fa-brands {
+    font-size: 50px;
+    color: var(--text-primary);
+    margin-left: 45px;
+}
+
+.fa-brands:hover {
+    transform: scale(1.3);
+}
+
+.contact-img {
+    height: 20vh;
+    background-image: url(assets/image/2.jpg);
+    background-position: center;
+    background-size: cover;       
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+    header {
+        height: 8vh;
+    }
+
+    .contact-text {
+        flex-direction: column;
+    }
+
+    .only-contact {
+        font-size: 60px;
+    }
+
+    .paragraf-only {
+        font-size: 18px;
+        width: 70%;
+    }
+
+    .second-text {
+        display: flex;
+        margin-left: 70px;
+        height: 50vh;
+        width: 60%;
+    }
+    
+    .text-contact {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .fa-brands {
+        font-size: 40px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 8vh;
+    }
+
+    .contact-text {
+        flex-direction: column;
+    }
+
+    .only-contact {
+        font-size: 50px;
+    }
+
+    .paragraf-only {
+        font-size: 16px;
+        width: 70%;
+    }
+
+    .second-text {
+        display: flex;
+        margin-left: 70px;
+        height: 50vh;
+        width: 60%;
+    }
+    
+    .text-contact {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .fa-brands {
+        font-size: 30px;
+        margin-left: 0;
+    }
+}
