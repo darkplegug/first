@@ -114,14 +114,21 @@ a:hover {
     display: flex;
     justify-content: left; 
     align-items: center;      
-    height: 100vh;      
+    height: 100vh;    
+
+    position: absolute;
+    top: 140%;     
+    left: 0;    
+    transform: translateY(-50%);
+    width: 60%;   
+    z-index: 1; 
 }
 
 .paragraf {
     width: 80%;
     font-size: 18px;
     text-align: left;
-    margin-left: 30px
+    margin-left: 30px;
 }
 
 .main-text {
@@ -130,7 +137,6 @@ a:hover {
     font-weight: 800;
     font-family: "Montserrat", sans-serif;
     color: var(--text-primary);
-    margin-left: 10px
 }
 
 .content-image {
@@ -176,16 +182,9 @@ a:hover {
 
     .main-text {
         order: 1;
-        font-size: 40px;
-    }
-
-    .about {
-        order: 2;
-    }
-
-    .paragraf {
-        font-size: 16px;
-        margin-left: 20px;
+        font-size: 40px; 
+        margin-left: 0;
+        top: 0;
     }
 
     .content-image {
@@ -196,9 +195,22 @@ a:hover {
         width: 100%;
         height: auto;
     }
+
+    .about {
+        top: 70px;
+        width: 100%;
+        position: relative;
+        max-height: 170px;
+    }
+
+    .paragraf {
+        width: 100%;
+        font-size: 16px;
+        margin-left: 10px;
+    }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 768px) {
+@media screen and (max-width: 1050px) and (min-width: 768px) {
     a {
         font-size: 18px;
     }
@@ -230,15 +242,6 @@ a:hover {
         font-size: 60px;
     }
 
-    .about {
-        order: 2;
-    }
-
-    .paragraf {
-        font-size: 16px;
-        margin-left: 20px;
-    }
-
     .content-image {
         width: 75%;
         display: flex;
@@ -247,5 +250,39 @@ a:hover {
     .about-image {
         width: 100%;
         height: auto;
+    }
+
+    .about {
+        top: 60px;
+        width: 100%;
+        position: relative;
+        max-height: 120px;
+    }
+
+    .paragraf {
+        width: 100%;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1050px) {
+    .about {
+        top: 117%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .content-text {
+        width: 12%;
+    }
+    .main-text {
+        writing-mode: vertical-rl; 
+        transform: rotate(180deg);
+    }
+
+    .content-image {
+        width: 90%;
+        display: flex;
     }
 }

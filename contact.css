@@ -13,7 +13,7 @@
 
 body {
     background-color: var(--secondary-color);
-    height: 100%;
+    height: 100vh;
 }
 
 header {
@@ -49,7 +49,7 @@ a:hover {
 .contact-text {
     display: flex;
     justify-content: space-between;
-    height: 70vh;
+    height: 80vh;
 }
 
 .prime-text {
@@ -74,7 +74,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
 }
 
 .text-contact {
@@ -92,19 +92,6 @@ a:hover {
 
 .fa-brands:hover {
     transform: scale(1.3);
-}
-
-.contact-img {
-    height: 20vh;
-    background-image: url(assets/image/2.jpg);
-    background-position: center;
-    background-size: cover;       
-    background-repeat: no-repeat;
-    display: flex;
-}
-
-.hidden {
-    display: none;
 }
 
 @media screen and (max-width: 1000px) and (min-width: 768px) {
@@ -140,6 +127,10 @@ a:hover {
     .fa-brands {
         font-size: 40px;
         margin-left: 0;
+    }
+
+    .hidden {
+        display: none;
     }
 }
 
